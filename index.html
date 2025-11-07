@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Tester</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Password Strength Tester 🔒</h1>
+      <p>Type your password below to see its strength and get tips to improve it.</p>
+    </header>
+
+    <main>
+      <div class="password-box">
+        <input type="password" id="passwordInput" placeholder="Enter password..." />
+        <div id="strengthBar" class="strength-bar"></div>
+      </div>
+
+      <div class="feedback">
+        <p id="strengthText">Strength: —</p>
+        <ul id="criteria">
+          <li id="length">At least 8 characters</li>
+          <li id="uppercase">Contains uppercase letter</li>
+          <li id="number">Contains number</li>
+          <li id="symbol">Contains symbol</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>Made with 💻 for password testing demo purposes.</p>
+    </footer>
+  </div>
+</body>
+</html>
